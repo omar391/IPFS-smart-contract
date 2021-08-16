@@ -94,7 +94,7 @@ func storeCID(cid string, api *api.Api, scClient *clients.SmartContractClient) *
 }
 
 func retriveCID(api *api.Api) string {
-	fmt.Println("\n5.-- Retrieving our CID into the blockchain --")
+	fmt.Println("\n5.-- Retrieving our CID from the blockchain --")
 	cid, err := api.Retrieve(&bind.CallOpts{})
 	if err != nil {
 		log.Fatalf("Error retrieving: %v", err)
