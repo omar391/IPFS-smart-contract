@@ -23,9 +23,24 @@
    <br>
 
 ## APP output:
+```
+1.-- Running an embedded IPFS node on a tmp directory-- 
+-- IPFS node is running successfully --
 
+2.-- Adding test.pdf from the etc dir --
+Added file to IPFS with CID: /ipfs/QmVDf2317mT4pPwg85G9XAvaRZLdFWNxoBqCQpw6bEmj4a
+
+3.-- Deploying our CID storage smart contract into Ganache --
+Deployed address: 0x75930c9E9492e76832cd163723c7ee3dd324427C --
+
+4.-- Storing our CID into the blockchain --
+
+5.-- Retrieving our CID from the blockchain --
+We have successfully stored and retrieved the CID: /ipfs/QmVDf2317mT4pPwg85G9XAvaRZLdFWNxoBqCQpw6bEmj4a
+```
 <br>
 
 ## `Ganache` interface:
+![image](https://user-images.githubusercontent.com/13569609/129557878-08645539-c7a7-4419-91a8-51b502498ded.png)
 
 <br>
