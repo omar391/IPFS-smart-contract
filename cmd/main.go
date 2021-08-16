@@ -26,7 +26,6 @@ func main() {
 
 	// upload and get a CID string
 	cid := upload(ctx, node)
-	_ = cid
 
 	//deploy the smart contract into the Ganache instance
 	scClient := &clients.SmartContractClient{
