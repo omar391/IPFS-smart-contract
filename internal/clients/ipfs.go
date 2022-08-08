@@ -23,7 +23,7 @@ import (
 	"github.com/libp2p/go-libp2p-core/peer"
 )
 
-/// ------ Setting up the IPFS Repo
+// / ------ Setting up the IPFS Repo
 func setupPlugins(externalPluginsPath string) error {
 	// Load any external plugins if available on externalPluginsPath
 	plugins, err := loader.NewPluginLoader(filepath.Join(externalPluginsPath, "plugins"))
@@ -192,7 +192,7 @@ func getUnixfsNode(path string) (files.Node, error) {
 	return f, nil
 }
 
-//Upload a file in the node and return a CID
+// Upload a file in the node and return a CID
 func UploadNGetCID(ctx context.Context, filePath string, node icore.CoreAPI) (path.Resolved, error) {
 	uploadFileNode, err := getUnixfsNode(filePath)
 	if err != nil {

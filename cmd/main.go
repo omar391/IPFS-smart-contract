@@ -38,7 +38,7 @@ func main() {
 	storeCID(cid, api, scClient)
 
 	// Retrieve our CID from blockchain
-	r_cid := retriveCID(api)
+	r_cid := retrieveCID(api)
 	fmt.Printf("We have successfully stored and retrieved the CID: %s", r_cid)
 }
 
@@ -92,7 +92,7 @@ func storeCID(cid string, api *api.Api, scClient *clients.SmartContractClient) *
 	return tx
 }
 
-func retriveCID(api *api.Api) string {
+func retrieveCID(api *api.Api) string {
 	fmt.Println("\n5.-- Retrieving our CID from the blockchain --")
 	cid, err := api.Retrieve(&bind.CallOpts{})
 	if err != nil {

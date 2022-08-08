@@ -1,12 +1,23 @@
 {
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast",
+        "--allow-parallel-runners"
+    ],
     "cSpell.words": [
-        "Unixfs",
+        "abigen",
+        "coreapi",
+        "ethclient",
         "fsrepo",
         "godotenv",
         "icore",
         "icorepath",
         "ipfs",
         "joho",
-        "libp"
+        "libp",
+        "multiaddr",
+        "multiformats",
+        "Pubkey",
+        "Unixfs"
     ]
 }
